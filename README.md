@@ -1,2 +1,8 @@
-# eleventy-static-site-learning
-play ground for some static sites 
+---
+layout: base/detail_base.njk
+title: My Rad Markdown Blog Post
+---
+
+# Page header
+# {{title}}
+
