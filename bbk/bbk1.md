@@ -1,10 +1,12 @@
 ---
 tags: bbk
-layout: bbk/base_detail.njk
+layout: bbk/detail/index.njk
 title: bbk1 | chetangupta
 date: 2020-11-16
 headline : BBK#1 Find Middle Element
 subline : can you make it clean?
+banner : https://picsum.photos/id/684/600/400
+permalink: /bbk1.html
 ---
 
 ```kotlin
