@@ -1,5 +1,5 @@
 ---
-tags: bbk
+tags: ['bbk', 'feat']
 layout: bbk/detail/index.njk
 title: bbk1 | chetangupta
 date: 2020-11-16

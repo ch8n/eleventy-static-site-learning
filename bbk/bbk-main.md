@@ -3,28 +3,59 @@ layout: bbk/home/index.njk
 title: Home | Big-Brain-Kotlin
 permalink: /
 pagination:
-  data: collections.bbk
-  size: 10
-  alias: bigbrainkotlin
+    data: collections.bbk
+    size: 10
+    alias: bigbrainkotlin
 ---
 
 
-<!-- article card -->
-{%- for bbk in bigbrainkotlin reversed -%}
+<!-- feature -->
+<div class="relative border-2 transform hover:shadow-xl h-96 overflow-hidden bg-teal-400" x-data="{ tabPosition : 0 }">
 
-<!-- one card container -->
-<div class="transform hover:-translate-y-6 hover:shadow-xl rounded-xl shadow-md border-2 overflow-hidden m-4">
-    <div onclick="window.open('{{bbk.data.permalink}}')">
-    <div class="bg-yellow-500 h-52 overflow-hidden">
-        <img class="object-cover w-full h-full" src="{{bbk.data.banner}}" alt="">
+    {%- for feat in collections.feat reversed-%}
+    <!-- feature tab -->
+    <div class="relative w-full h-full" x-show="tabPosition === 0">
+
+        <!-- overlay -->
+        <div class="absolute bg-opacity-50 bg-gray-900 w-full h-full "></div>
+
+        <!-- avatar -->
+        <p class="absolute rounded-full ml-4 mt-6 text-gray-200 bg-white text-gray-900 px-4">featured</p>
+
+        <!-- backgroundImage -->
+        <img class="object-cover w-full h-full" src="{{feat.data.banner}}" alt="">
+
+        <div class="absolute p-4 left-2 bottom-10">
+            <img class=" w-10 h-10 rounded-full object-cover border-2 mb-2" src="{{feat.data.avatar}}" alt="">
+
+            <p class="text-3xl text-gray-200">{{ feat.data.headline }}</p>
+            <p class="text-xl text-gray-200">{{ feat.data.subline }}</p>
+        </div>
+
     </div>
-    <div class="px-4 py-2">
-        <p class="text-sm mt-2">{{bbk.data.tags[0]}}</p>
-        <p class="text-xl mt-1">{{ bbk.data.headline }}</p>
-        <p class="text-base mt-1 truncate">{{ bbk.data.subline }}</p>
-    </div>
-    </div>
+    {%- endfor -%}
+
 </div>
-       
-{%- endfor -%}
 
+<!-- article list -->
+<div class="lg:container lg:mx-auto lg:p-4 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+
+    <!-- article card -->
+    {%- for bbk in bigbrainkotlin reversed -%}
+
+    <!-- one card container -->
+    <div class="transform hover:-translate-y-6 hover:shadow-xl rounded-xl shadow-md border-2 overflow-hidden m-4">
+        <div onclick="window.open('{{bbk.data.permalink}}')">
+            <div class="bg-yellow-500 h-52 overflow-hidden">
+                <img class="object-cover w-full h-full" src="{{bbk.data.banner}}" alt="">
+            </div>
+            <div class="px-4 py-2">
+                <p class="text-sm mt-2">{{bbk.data.tags[0]}}</p>
+                <p class="text-xl mt-1">{{ bbk.data.headline }}</p>
+                <p class="text-base mt-1 truncate">{{ bbk.data.subline }}</p>
+            </div>
+        </div>
+    </div>
+
+    {%- endfor -%}
+</div>

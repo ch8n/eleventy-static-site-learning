@@ -28,143 +28,105 @@
 
     <!-- main -->
     <main class="">
-
-
         <!-- feature -->
-        <div class="relative border-2 transform hover:shadow-xl h-96 overflow-hidden bg-teal-400"
-            x-data="{ tabPosition : 0 }">
+<div class="relative border-2 transform hover:shadow-xl h-96 overflow-hidden bg-teal-400" x-data="{ tabPosition : 0 }"><!-- feature tab -->
+    <div class="relative w-full h-full" x-show="tabPosition === 0">
+<pre><code>    &lt;!-- overlay --&gt;
+    &lt;div class=&quot;absolute bg-opacity-50 bg-gray-900 w-full h-full &quot;&gt;&lt;/div&gt;
 
-            <!-- feature tab 1 -->
-            <div class="relative w-full h-full" x-show="tabPosition === 0">
+    &lt;!-- avatar --&gt;
+    &lt;p class=&quot;absolute rounded-full ml-4 mt-6 text-gray-200 bg-white text-gray-900 px-4&quot;&gt;featured&lt;/p&gt;
 
-                <!-- overlay -->
-                <div class="absolute bg-opacity-50 bg-gray-900 w-full h-full "></div>
+    &lt;!-- backgroundImage --&gt;
+    &lt;img class=&quot;object-cover w-full h-full&quot; src=&quot;https://picsum.photos/id/684/600/400&quot; alt=&quot;&quot;&gt;
 
-                <!-- avatar -->
-                <p class="absolute rounded-full ml-4 mt-6 text-gray-200 bg-white text-gray-900 px-4">featured</p>
+    &lt;div class=&quot;absolute p-4 left-2 bottom-10&quot;&gt;
+        &lt;img class=&quot; w-10 h-10 rounded-full object-cover border-2 mb-2&quot; src=&quot;&quot; alt=&quot;&quot;&gt;
 
-                <!-- backgroundImage -->
-                <img class="object-cover w-full h-full" src="https://picsum.photos/id/1060/600/400" alt="">
+        &lt;p class=&quot;text-3xl text-gray-200&quot;&gt;BBK#1 Find Middle Element&lt;/p&gt;
+        &lt;p class=&quot;text-xl text-gray-200&quot;&gt;can you make it clean?&lt;/p&gt;
+    &lt;/div&gt;
 
-                <div class="absolute p-4 left-2 bottom-10">
-                    <img class=" w-10 h-10 rounded-full object-cover border-2 mb-2"
-                        src="https://picsum.photos/id/1025/600/400" alt="">
+&lt;/div&gt;&lt;!-- feature tab --&gt;
+&lt;div class=&quot;relative w-full h-full&quot; x-show=&quot;tabPosition === 0&quot;&gt;
 
-                    <p class="text-3xl text-gray-200">Lorem ipsum dolor sit amet.</p>
-                    <p class="text-xl text-gray-200">Lorem ipsum dolor sit amet.</p>
-                </div>
+    &lt;!-- overlay --&gt;
+    &lt;div class=&quot;absolute bg-opacity-50 bg-gray-900 w-full h-full &quot;&gt;&lt;/div&gt;
 
-            </div>
+    &lt;!-- avatar --&gt;
+    &lt;p class=&quot;absolute rounded-full ml-4 mt-6 text-gray-200 bg-white text-gray-900 px-4&quot;&gt;featured&lt;/p&gt;
 
-            <!-- feature tab 2 -->
-            <div class="relative w-full h-full" x-show="tabPosition === 1">
+    &lt;!-- backgroundImage --&gt;
+    &lt;img class=&quot;object-cover w-full h-full&quot; src=&quot;https://picsum.photos/id/684/600/400&quot; alt=&quot;&quot;&gt;
 
-                <!-- overlay -->
-                <div class="absolute bg-opacity-50 bg-gray-900 w-full h-full "></div>
+    &lt;div class=&quot;absolute p-4 left-2 bottom-10&quot;&gt;
+        &lt;img class=&quot; w-10 h-10 rounded-full object-cover border-2 mb-2&quot; src=&quot;&quot; alt=&quot;&quot;&gt;
 
-                <!-- avatar -->
-                <p class="absolute rounded-full ml-4 mt-6 text-gray-200 bg-white text-gray-900 px-4">featured</p>
+        &lt;p class=&quot;text-3xl text-gray-200&quot;&gt;BBK#1 Find Middle Element&lt;/p&gt;
+        &lt;p class=&quot;text-xl text-gray-200&quot;&gt;can you make it clean?&lt;/p&gt;
+    &lt;/div&gt;
 
-                <!-- backgroundImage -->
-                <img class="object-cover w-full h-full" src="https://picsum.photos/id/1020/600/400" alt="">
+&lt;/div&gt;&lt;!-- feature tab --&gt;
+&lt;div class=&quot;relative w-full h-full&quot; x-show=&quot;tabPosition === 0&quot;&gt;
 
-                <div class="absolute p-4 left-2 bottom-10">
-                    <img class=" w-10 h-10 rounded-full object-cover border-2 mb-2"
-                        src="https://picsum.photos/id/1025/600/400" alt="">
+    &lt;!-- overlay --&gt;
+    &lt;div class=&quot;absolute bg-opacity-50 bg-gray-900 w-full h-full &quot;&gt;&lt;/div&gt;
 
-                    <p class="text-3xl text-gray-200">Lorem ipsum dolor sit amet.</p>
-                    <p class="text-xl text-gray-200">Lorem ipsum dolor sit amet.</p>
-                </div>
+    &lt;!-- avatar --&gt;
+    &lt;p class=&quot;absolute rounded-full ml-4 mt-6 text-gray-200 bg-white text-gray-900 px-4&quot;&gt;featured&lt;/p&gt;
 
-            </div>
+    &lt;!-- backgroundImage --&gt;
+    &lt;img class=&quot;object-cover w-full h-full&quot; src=&quot;https://picsum.photos/id/684/600/400&quot; alt=&quot;&quot;&gt;
 
-            <!-- feature tab 3 -->
-            <div class="relative w-full h-full" x-show="tabPosition === 2">
+    &lt;div class=&quot;absolute p-4 left-2 bottom-10&quot;&gt;
+        &lt;img class=&quot; w-10 h-10 rounded-full object-cover border-2 mb-2&quot; src=&quot;./images/avatar.png&quot; alt=&quot;&quot;&gt;
 
-                <!-- overlay -->
-                <div class="absolute bg-opacity-50 bg-gray-900 w-full h-full "></div>
+        &lt;p class=&quot;text-3xl text-gray-200&quot;&gt;BBK#1 Find Middle Element&lt;/p&gt;
+        &lt;p class=&quot;text-xl text-gray-200&quot;&gt;can you make it clean?&lt;/p&gt;
+    &lt;/div&gt;
 
-                <!-- avatar -->
-                <p class="absolute rounded-full ml-4 mt-6 text-gray-200 bg-white text-gray-900 px-4">featured</p>
+&lt;/div&gt;&lt;/div&gt;
+</code></pre>
+<!-- article list -->
+<div class="lg:container lg:mx-auto lg:p-4 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+<pre><code>&lt;!-- article card --&gt;&lt;!-- one card container --&gt;
+&lt;div class=&quot;transform hover:-translate-y-6 hover:shadow-xl rounded-xl shadow-md border-2 overflow-hidden m-4&quot;&gt;
+    &lt;div onclick=&quot;window.open('/bbk3.html')&quot;&gt;
+        &lt;div class=&quot;bg-yellow-500 h-52 overflow-hidden&quot;&gt;
+            &lt;img class=&quot;object-cover w-full h-full&quot; src=&quot;https://picsum.photos/id/684/600/400&quot; alt=&quot;&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;px-4 py-2&quot;&gt;
+            &lt;p class=&quot;text-sm mt-2&quot;&gt;bbk&lt;/p&gt;
+            &lt;p class=&quot;text-xl mt-1&quot;&gt;BBK#1 Find Middle Element&lt;/p&gt;
+            &lt;p class=&quot;text-base mt-1 truncate&quot;&gt;can you make it clean?&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;&lt;!-- one card container --&gt;
+&lt;div class=&quot;transform hover:-translate-y-6 hover:shadow-xl rounded-xl shadow-md border-2 overflow-hidden m-4&quot;&gt;
+    &lt;div onclick=&quot;window.open('/bbk2.html')&quot;&gt;
+        &lt;div class=&quot;bg-yellow-500 h-52 overflow-hidden&quot;&gt;
+            &lt;img class=&quot;object-cover w-full h-full&quot; src=&quot;https://picsum.photos/id/684/600/400&quot; alt=&quot;&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;px-4 py-2&quot;&gt;
+            &lt;p class=&quot;text-sm mt-2&quot;&gt;bbk&lt;/p&gt;
+            &lt;p class=&quot;text-xl mt-1&quot;&gt;BBK#1 Find Middle Element&lt;/p&gt;
+            &lt;p class=&quot;text-base mt-1 truncate&quot;&gt;can you make it clean?&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;&lt;!-- one card container --&gt;
+&lt;div class=&quot;transform hover:-translate-y-6 hover:shadow-xl rounded-xl shadow-md border-2 overflow-hidden m-4&quot;&gt;
+    &lt;div onclick=&quot;window.open('/bbk1.html')&quot;&gt;
+        &lt;div class=&quot;bg-yellow-500 h-52 overflow-hidden&quot;&gt;
+            &lt;img class=&quot;object-cover w-full h-full&quot; src=&quot;https://picsum.photos/id/684/600/400&quot; alt=&quot;&quot;&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;px-4 py-2&quot;&gt;
+            &lt;p class=&quot;text-sm mt-2&quot;&gt;bbk&lt;/p&gt;
+            &lt;p class=&quot;text-xl mt-1&quot;&gt;BBK#1 Find Middle Element&lt;/p&gt;
+            &lt;p class=&quot;text-base mt-1 truncate&quot;&gt;can you make it clean?&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;&lt;/div&gt;</code></pre>
 
-                <!-- backgroundImage -->
-                <img class="object-cover w-full h-full" src="https://picsum.photos/id/598/600/400" alt="">
-
-
-                <div class="absolute p-4 left-2 bottom-10">
-                    <img class=" w-10 h-10 rounded-full object-cover border-2 mb-2"
-                        src="https://picsum.photos/id/1025/600/400" alt="">
-
-                    <p class="text-3xl text-gray-200">Lorem ipsum dolor sit amet.</p>
-                    <p class="text-xl text-gray-200">Lorem ipsum dolor sit amet.</p>
-                </div>
-
-            </div>
-
-
-            <!-- feature naviagtion -->
-            <div class="absolute bottom-0 right-0 p-4">
-                <p class="inline rounded-full ml-4 mt-6 text-gray-200 bg-white text-gray-900 px-4 py-1" @click.prevent=" 
-                        if(tabPosition > 0) {
-                            tabPosition = tabPosition - 1 
-                        } else {
-                            tabPosition = 2
-                        }
-                    
-                    ">Previous</p>
-                <p class="inline rounded-full ml-4 mt-6 text-gray-200 bg-white text-gray-900 px-4 py-1" @click.prevent=" 
-                if(tabPosition < 2) {
-                    tabPosition = tabPosition + 1
-                } else {
-                    tabPosition = 0 
-                }
-            ">Next</p>
-            </div>
-
-        </div>
-
-        <!-- article list -->
-        <div class="lg:container lg:mx-auto lg:p-4 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-
-            <!-- article card --><!-- one card container -->
-<div class="transform hover:-translate-y-6 hover:shadow-xl rounded-xl shadow-md border-2 overflow-hidden m-4">
-    <div onclick="window.open('/bbk3.html')">
-    <div class="bg-yellow-500 h-52 overflow-hidden">
-        <img class="object-cover w-full h-full" src="https://picsum.photos/id/684/600/400" alt="">
-    </div>
-    <div class="px-4 py-2">
-        <p class="text-sm mt-2">bbk</p>
-        <p class="text-xl mt-1">BBK#1 Find Middle Element</p>
-        <p class="text-base mt-1 truncate">can you make it clean?</p>
-    </div>
-    </div>
-</div><!-- one card container -->
-<div class="transform hover:-translate-y-6 hover:shadow-xl rounded-xl shadow-md border-2 overflow-hidden m-4">
-    <div onclick="window.open('/bbk2.html')">
-    <div class="bg-yellow-500 h-52 overflow-hidden">
-        <img class="object-cover w-full h-full" src="https://picsum.photos/id/684/600/400" alt="">
-    </div>
-    <div class="px-4 py-2">
-        <p class="text-sm mt-2">bbk</p>
-        <p class="text-xl mt-1">BBK#1 Find Middle Element</p>
-        <p class="text-base mt-1 truncate">can you make it clean?</p>
-    </div>
-    </div>
-</div><!-- one card container -->
-<div class="transform hover:-translate-y-6 hover:shadow-xl rounded-xl shadow-md border-2 overflow-hidden m-4">
-    <div onclick="window.open('/bbk1.html')">
-    <div class="bg-yellow-500 h-52 overflow-hidden">
-        <img class="object-cover w-full h-full" src="https://picsum.photos/id/684/600/400" alt="">
-    </div>
-    <div class="px-4 py-2">
-        <p class="text-sm mt-2">bbk</p>
-        <p class="text-xl mt-1">BBK#1 Find Middle Element</p>
-        <p class="text-base mt-1 truncate">can you make it clean?</p>
-    </div>
-    </div>
-</div>
-
-        </div>
 
 
         <!-- footer -->
