@@ -7,14 +7,14 @@ pagination:
     data: collections.bbk
     size: 10
     alias: bigbrainkotlin
-    reverse : true
+    reverse: true
 ---
 
 
 <!-- feature -->
 <div class="relative border-2 transform hover:shadow-xl h-96 overflow-hidden bg-teal-400" x-data="{ tabPosition : 0 }">
 
-    {%- for feat in collections.feat reversed-%}
+    {%- for feat in collections.feat reversed -%}
     <!-- feature tab -->
     <div class="relative w-full h-full" x-show="tabPosition == '{{feat.data.featTabId}}'" onclick="window.open('{{feat.data.permalink}}')">
 
@@ -61,7 +61,7 @@ pagination:
 <div class="lg:container lg:mx-auto lg:p-4 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
     <!-- article card -->
-    {%- for bbk in bigbrainkotlin reversed -%}
+    {%- for bbk in bigbrainkotlin -%}
 
     <!-- one card container -->
     <div class="transform hover:-translate-y-6 hover:shadow-xl rounded-xl shadow-md border-2 overflow-hidden m-4">
