@@ -1,14 +1,13 @@
 ---
-tags: ['bbk', 'feat']
+tags: ['bbk']
 layout: bbk/detail/index.njk
-title: bbk3 | chetangupta
+title: bbk4 | chetangupta
 date: 2020-11-16
-headline : BBK#3 Find Middle Element
+headline : BBK#4 Find Middle Element
 subline : can you make it clean?
-banner : https://picsum.photos/id/1081/600/400
-permalink: /bbk3.html
+banner : https://picsum.photos/id/1025/600/400
+permalink: /bbk4.html
 avatar: ./images/avatar.png
-featTabId : 2
 ---
 
 ```kotlin
