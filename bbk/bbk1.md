@@ -8,6 +8,7 @@ subline : can you make it clean?
 banner : https://picsum.photos/id/684/600/400
 permalink: /bbk1.html
 avatar: ./images/avatar.png
+featTabId: 0
 ---
 
 ```kotlin

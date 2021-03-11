@@ -14,26 +14,44 @@ pagination:
 
     {%- for feat in collections.feat reversed-%}
     <!-- feature tab -->
-    <div class="relative w-full h-full" x-show="tabPosition === 0">
+    <div class="relative w-full h-full" x-show="tabPosition == '{{feat.data.featTabId}}'" onclick="window.open('{{feat.data.permalink}}')">
 
         <!-- overlay -->
         <div class="absolute bg-opacity-50 bg-gray-900 w-full h-full "></div>
 
-        <!-- avatar -->
         <p class="absolute rounded-full ml-4 mt-6 text-gray-200 bg-white text-gray-900 px-4">featured</p>
 
         <!-- backgroundImage -->
         <img class="object-cover w-full h-full" src="{{feat.data.banner}}" alt="">
 
         <div class="absolute p-4 left-2 bottom-10">
+            <!-- avatar -->
             <img class=" w-10 h-10 rounded-full object-cover border-2 mb-2" src="{{feat.data.avatar}}" alt="">
 
-            <p class="text-3xl text-gray-200">{{ feat.data.headline }}</p>
+            <p class="text-3xl text-gray-200">{{ feat.data.headline }} {{loop.index}}</p>
             <p class="text-xl text-gray-200">{{ feat.data.subline }}</p>
         </div>
-
     </div>
     {%- endfor -%}
+
+    <!-- feature naviagtion -->
+    <div class="absolute bottom-0 right-0 p-4">
+        <p class="inline rounded-full ml-4 mt-6 text-gray-200 bg-white text-gray-900 px-4 py-1" @click.prevent=" 
+                if(tabPosition > 0) {
+                    tabPosition = tabPosition - 1 
+                } else {
+                    tabPosition = 2
+                }
+            
+            ">Previous</p>
+        <p class="inline rounded-full ml-4 mt-6 text-gray-200 bg-white text-gray-900 px-4 py-1" @click.prevent=" 
+        if(tabPosition < 2) {
+            tabPosition = tabPosition + 1
+        } else {
+            tabPosition = 0 
+        }
+    ">Next</p>
+    </div>
 
 </div>
 

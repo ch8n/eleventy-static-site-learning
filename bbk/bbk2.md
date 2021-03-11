@@ -5,8 +5,10 @@ title: bbk1 | chetangupta
 date: 2020-11-16
 headline : BBK#1 Find Middle Element
 subline : can you make it clean?
-banner : https://picsum.photos/id/684/600/400
+banner : https://picsum.photos/id/598/600/400
 permalink: /bbk2.html
+avatar: ./images/avatar.png
+featTabId : 1
 ---
 
 ```kotlin
