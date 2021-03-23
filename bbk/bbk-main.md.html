@@ -66,6 +66,7 @@ pagination:
 
     <!-- one card container -->
     <div class="transform hover:-translate-y-6 hover:shadow-xl rounded-xl shadow-md border-2 overflow-hidden m-4">
+         
         <div onclick="window.open('{{bbk.data.permalink}}')">
             <div class="bg-yellow-500 h-52 overflow-hidden">
                 <img class="object-cover w-full h-full" src="{{bbk.data.banner}}" alt="">
@@ -81,11 +82,11 @@ pagination:
     {%- endfor -%}
 </div>
 
-<div class="container mx-auto">
+<div class="container mx-auto p-4">
     <nav >
-        <p class="text-2xl font-semibold text-center ">Pages</p>
+        <p class="text-2xl font-semibold text-center">Pages</p>
         
-        <ol class="inline-block container mx-auto">
+        <ol class="flex justify-center items-center">
             
             <li class="px-4">{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">First</a>{% else %}First{%
             endif %}</li>
