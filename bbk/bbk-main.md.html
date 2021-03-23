@@ -2,7 +2,7 @@
 layout: bbk/home/index.njk
 title: Home | Big-Brain-Kotlin
 homeBanner: https://picsum.photos/id/1025/600/400
-permalink: /main/{{ pagination.pageNumber + 1}}.html
+permalink: /main/{{ pagination.pageNumber }}.html
 pagination:
     data: collections.bbk
     size: 3
@@ -16,7 +16,8 @@ pagination:
 
     {%- for feat in collections.feat reversed -%}
     <!-- feature tab -->
-    <div class="relative w-full h-full" x-show="tabPosition == '{{feat.data.featTabId}}'" onclick="window.open('{{feat.data.permalink}}')">
+    <div class="relative w-full h-full" x-show="tabPosition == '{{feat.data.featTabId}}'"
+        onclick="window.open('{{feat.data.permalink}}')">
 
         <!-- overlay -->
         <div class="absolute bg-opacity-50 bg-gray-900 w-full h-full "></div>
@@ -80,18 +81,28 @@ pagination:
     {%- endfor -%}
 </div>
 
-{% if pagination.pageLinks.length > 1 %}
-<nav class="pagination">
-  {% if pagination.previousPageLink %}
-    <a class="pagination__item" href="{{ pagination.previousPageHref | url }}">Newer Articles</a>
-  {% else %}
-    <span class="pagination__item">Newer Articles</span>
-  {% endif %}
-
-  {% if pagination.nextPageLink %}
-    <a class="pagination__item" href="{{ pagination.nextPageHref | url }}">Older Articles</a>
-  {% else %}
-    <span class="pagination__item">Older Articles</span>
-  {% endif %}
-</nav>
-{% endif %}
+<div class="container mx-auto">
+    <nav >
+        <p class="text-2xl font-semibold text-center ">Pages</p>
+        
+        <ol class="inline-block container mx-auto">
+            
+            <li class="px-4">{% if page.url != pagination.href.first %}<a href="{{ pagination.href.first }}">First</a>{% else %}First{%
+            endif %}</li>
+        
+            <li class="px-4" >{% if pagination.href.previous %}<a href="{{ pagination.href.previous }}">Previous</a>{% else %}Previous{%
+            endif %}</li>
+        
+            {%- for pageEntry in bigbrainkotlin.pages %}
+            <li class="px-1" >
+                <a href="{{ pageEntry.hrefs[ loop.index0 ] }}" {% if page.url==pageEntry.hrefs[ loop.index0 ] %}
+                aria-current="page" {% endif %}>Page {{ loop.index }}
+                </a>
+            </li>
+            {%- endfor %}
+        
+            <li class="px-4" >{% if pagination.href.next %}<a href="{{ pagination.href.next }}">Next</a>{% else %}Next{% endif %}</li>
+        </ol>
+        
+    </nav>
+</div>

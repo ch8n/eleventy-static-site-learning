@@ -31,7 +31,8 @@
 
 <!-- feature -->
 <div class="relative border-2 transform hover:shadow-xl h-96 overflow-hidden bg-teal-400" x-data="{ tabPosition : 0 }"><!-- feature tab -->
-    <div class="relative w-full h-full" x-show="tabPosition == '2'" onclick="window.open('/bbk3.html')">
+    <div class="relative w-full h-full" x-show="tabPosition == '2'"
+        onclick="window.open('/bbk3.html')">
 
         <!-- overlay -->
         <div class="absolute bg-opacity-50 bg-gray-900 w-full h-full "></div>
@@ -49,7 +50,8 @@
             <p class="text-xl text-gray-200">can you make it clean?</p>
         </div>
     </div><!-- feature tab -->
-    <div class="relative w-full h-full" x-show="tabPosition == '1'" onclick="window.open('/bbk2.html')">
+    <div class="relative w-full h-full" x-show="tabPosition == '1'"
+        onclick="window.open('/bbk2.html')">
 
         <!-- overlay -->
         <div class="absolute bg-opacity-50 bg-gray-900 w-full h-full "></div>
@@ -67,7 +69,8 @@
             <p class="text-xl text-gray-200">can you make it clean?</p>
         </div>
     </div><!-- feature tab -->
-    <div class="relative w-full h-full" x-show="tabPosition == '0'" onclick="window.open('/bbk1.html')">
+    <div class="relative w-full h-full" x-show="tabPosition == '0'"
+        onclick="window.open('/bbk1.html')">
 
         <!-- overlay -->
         <div class="absolute bg-opacity-50 bg-gray-900 w-full h-full "></div>
@@ -122,17 +125,21 @@
         </div>
     </div></div>
 
-
-<nav class="pagination">
-  
-    <a class="pagination__item" href="/main/0.html">Newer Articles</a>
-  
-
-  
-    <span class="pagination__item">Older Articles</span>
-  
-</nav>
-
+<div class="container mx-auto">
+    <nav >
+        <p class="text-2xl font-semibold text-center ">Pages</p>
+        
+        <ol class="inline-block container mx-auto">
+            
+            <li class="px-4"><a href="/main/0.html">First</a></li>
+        
+            <li class="px-4" ><a href="/main/0.html">Previous</a></li>
+        
+            <li class="px-4" >Next</li>
+        </ol>
+        
+    </nav>
+</div>
     </main>
     <!-- footer -->
     <footer class="bg-gray-900 text-gray-200 p-6">
