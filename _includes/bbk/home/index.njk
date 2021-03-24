@@ -11,6 +11,7 @@
 
 <body class="flex flex-col h-screen mb-auto bg-gray-300 font-sans">
 
+
     <!-- header -->
     <header>
 
@@ -26,20 +27,21 @@
 
 
     <!-- main -->
-    <main class="lg:h-screen">
+    <main class="flex-1">
         {{ content | safe }}
+
+            <!-- footer -->
+    
     </main>
 
-    <!-- footer -->
+   
     <footer class="bg-gray-900 text-gray-200 p-6">
             <div class="flex flex-col justify-center items-center">
                 <p class="capitalize">© 2021 Chetan Gupta</p>
                 <p>Social</p>
             </div>
     </footer>
-
-   
-
+    
 </body>
 
 </html>
