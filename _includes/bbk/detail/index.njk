@@ -6,36 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../css/output.css" rel="stylesheet">
+    <link href="../../prism.css" rel="stylesheet" />
     <title>{{title}}</title>
 </head>
 
-<body>
+<body class="h-screen bg-gray-800 font-sans">
 
-    <body class="h-screen bg-gray-300 font-sans">
+    <div class="h-full">
 
         <!-- header -->
         <header>
 
             <!-- Hero Image -->
-            <div class="h-96 bg-red-400 overflow-hidden bg-red-400">
+            <div class="bg-cover bg-center h-96 bg-red-400 overflow-hidden bg-red-400">
                 <img class="object-cover w-full h-full" src="{{banner}}" alt="">
             </div>
 
         </header>
 
-
         <!-- main -->
-        <main>
+        <main class="h-full p-8">
 
             <!-- article container -->
-            <div class="container mx-auto flex flex-col py-16 px-4 md:px-8 lg:px-36  ">
+            <div>
                 <p class="text-4xl bold text-center mb-2 capitalize">{{headline}}</p>
                 <p class="text-2xl text-center mb-16 ">{{subline}}</p>
-                {{ content | safe }}
+
+                <div>
+                    {{ content | safe }}
+                </div>
             </div>
 
-
-            <!-- recommended section -->
+             <!-- recommended section -->
             <div>
 
                 <p class="text-xl text-center capitalize">Recommended Reads</p>
@@ -116,7 +118,12 @@
 
             </footer>
 
-    </body>
+        </main>   
+
+           
+
+    </div>
+    <script src="../scripts/prism.js"></script>
 
 </body>
 

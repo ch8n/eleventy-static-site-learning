@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build:css": "tailwindcss build ./css/styles.css -o ./css/output.css",
+    "tailwin-init": "tailwindcss init",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx @11ty/eleventy",
     "serve": "npx @11ty/eleventy --serve"
@@ -20,6 +22,9 @@
   },
   "homepage": "https://github.com/ch8n/eleventy-static-site-learning#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.11.1"
+    "@11ty/eleventy": "^0.11.1",
+    "autoprefixer": "^10.0.4",
+    "postcss": "^8.1.14",
+    "tailwindcss": "^2.0.1"
   }
 }

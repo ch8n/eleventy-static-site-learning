@@ -6,32 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../css/output.css" rel="stylesheet">
-    <title>bbk3 | chetangupta</title>
+    <link href="../../prism.css" rel="stylesheet" />
+    <title>bbk4 | chetangupta</title>
 </head>
 
-<body>
+<body class="h-screen bg-gray-800 font-sans">
 
-    <body class="h-screen bg-gray-300 font-sans">
+    <div class="h-full">
 
         <!-- header -->
         <header>
 
             <!-- Hero Image -->
-            <div class="h-96 bg-red-400 overflow-hidden bg-red-400">
-                <img class="object-cover w-full h-full" src="https://picsum.photos/id/1081/600/400" alt="">
+            <div class="bg-cover bg-center h-96 bg-red-400 overflow-hidden bg-red-400">
+                <img class="object-cover w-full h-full" src="https://picsum.photos/id/1025/600/400" alt="">
             </div>
 
         </header>
 
-
         <!-- main -->
-        <main>
+        <main class="h-full p-8">
 
             <!-- article container -->
-            <div class="container mx-auto flex flex-col py-16 px-4 md:px-8 lg:px-36  ">
-                <p class="text-4xl bold text-center mb-2 capitalize">BBK#3 Find Middle Element</p>
+            <div>
+                <p class="text-4xl bold text-center mb-2 capitalize">BBK#4 Find Middle Element</p>
                 <p class="text-2xl text-center mb-16 ">can you make it clean?</p>
-                <pre><code class="language-kotlin">fun getMiddle(word : String) : String {
+
+                <div>
+                    <pre><code class="language-kotlin">fun getMiddle(word : String) : String {
 	val chars = word.toCharArray()
 	val mid = chars.size/2
 	return  if(chars.size%2==0){
@@ -42,10 +44,10 @@
 }
 </code></pre>
 
+                </div>
             </div>
 
-
-            <!-- recommended section -->
+             <!-- recommended section -->
             <div>
 
                 <p class="text-xl text-center capitalize">Recommended Reads</p>
@@ -126,7 +128,12 @@
 
             </footer>
 
-    </body>
+        </main>   
+
+           
+
+    </div>
+    <script src="../scripts/prism.js"></script>
 
 </body>
 

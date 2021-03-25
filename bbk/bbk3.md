@@ -6,7 +6,7 @@ date: 2020-11-16
 headline : BBK#3 Find Middle Element
 subline : can you make it clean?
 banner : https://picsum.photos/id/1081/600/400
-permalink: /bbk3.html
+permalink: /bbk/bbk3.html
 avatar: ./images/avatar.png
 featTabId : 2
 ---
