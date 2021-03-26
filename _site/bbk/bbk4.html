@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../css/output.css" rel="stylesheet">
-    <link href="../../prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/styles/androidstudio.css">
     <title>bbk4 | chetangupta</title>
 </head>
 
@@ -23,20 +23,20 @@
         </header>
 
         <!-- main -->
-        <main class="container p-8 ">
+        <main class="">
 
             <!-- article container -->
-            <div >
+            <div class="container py-8 px-8 md:px-12 lg:px-20" >
                 <p class="text-4xl bold text-center mb-2 capitalize">BBK#4 Find Middle Element</p>
-                <p class="text-lg text-center mb-4 "><!-- avatar -->
+                <p class="text-lg text-center mb-4 ">
+                    <!-- avatar -->
                     <img class="inline-block w-10 h-10 rounded-full object-cover border-2 mr-2 md-2" src="./images/avatar.png" alt=""> 
                     can you make it clean?
                 </p>
                 <hr class="mb-8">
-            </div>
 
-            <div class="flex flex-col">
-                <pre><code class="language-kotlin">fun getMiddle(word : String) : String {
+                <div class="grid grid-cols-1 xl:grid-cols-2">
+                    <pre><code class="language-kotlin">fun getMiddle(word : String) : String {
 	val chars = word.toCharArray()
 	val mid = chars.size/2
 	return  if(chars.size%2==0){
@@ -47,9 +47,9 @@
 }
 </code></pre>
 
+                </div>
             </div>
-
-            
+    
         </main>   
 
            
@@ -135,7 +135,8 @@
             </footer>
 
     
-    <script src="../scripts/prism.js"></script>
+    <script src="../../scripts/highlight.pack.js"></script>
+    <script>hljs.highlightAll();</script>
 
 </body>
 

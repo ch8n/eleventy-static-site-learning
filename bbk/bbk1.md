@@ -43,6 +43,22 @@ Tibi tuoque dominam. An et nautae ex **Minos moriemur**. Et *somni*, deus vir
 loquentem minor putas cervo qui lassatis plura magni. Ubi scire tumulo, coniunx
 [Andros](http://sumptas.net/).
 
+---
+
+<pre>
+<code class="kotlin">
+fun foo(){
+    println("Aureus aggere virorum igitur hunc: cum sumus percutit; et *faces testis* in.
+Tibi tuoque dominam. An et nautae ex **Minos moriemur**. Et *somni*, deus vir
+loquentem minor putas cervo qui lassatis plura magni. Ubi scire tumulo, coniunx
+[Andros](http://sumptas.net/).
+")
+}
+</code>
+</pre>
+
+---
+
 ## Laudem capillos adsistere festumque vacantem usque levat
 
 Rogos quem dominum enim caerula, nec visus, tempora. Semina alta non sustinui

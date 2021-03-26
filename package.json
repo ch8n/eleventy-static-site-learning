@@ -26,5 +26,8 @@
     "autoprefixer": "^10.0.4",
     "postcss": "^8.1.14",
     "tailwindcss": "^2.0.1"
+  },
+  "dependencies": {
+    "@toycode/markdown-it-class": "^1.2.4"
   }
 }

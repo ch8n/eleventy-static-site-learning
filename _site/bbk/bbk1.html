@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../../css/output.css" rel="stylesheet">
-    <link href="../../prism.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../../css/styles/androidstudio.css">
     <title>bbk1 | chetangupta</title>
 </head>
 
@@ -23,20 +23,20 @@
         </header>
 
         <!-- main -->
-        <main class="container p-8 ">
+        <main class="">
 
             <!-- article container -->
-            <div >
+            <div class="container py-8 px-8 md:px-12 lg:px-20" >
                 <p class="text-4xl bold text-center mb-2 capitalize">BBK#1 Find Middle Element</p>
-                <p class="text-lg text-center mb-4 "><!-- avatar -->
+                <p class="text-lg text-center mb-4 ">
+                    <!-- avatar -->
                     <img class="inline-block w-10 h-10 rounded-full object-cover border-2 mr-2 md-2" src="../../images/avatar.png" alt=""> 
                     Lorem markdownum corpore inque rapidi. Sine **haut** quos, coeperunt duce
                 </p>
                 <hr class="mb-8">
-            </div>
 
-            <div class="flex flex-col">
-                <h1>Possidet verba trepidantem inbellibus ille</h1>
+                <div class="grid grid-cols-1 xl:grid-cols-2">
+                    <h1 class="text-4xl text-gray-200 font-bold">Possidet verba trepidantem inbellibus ille</h1>
 <h2>Morientis quamvis nectare potiturque caritura taedae</h2>
 <p>Lorem markdownum corpore inque rapidi. Sine <strong>haut</strong> quos, coeperunt duce: et
 bovem silvas et hinc, bracchiaque possunt.</p>
@@ -44,7 +44,7 @@ bovem silvas et hinc, bracchiaque possunt.</p>
 <p>Indos vult nova acer deprimeret precor poteras nimiique suis <strong>et</strong>, iugulum
 missi est laeva partes. Cinyreius declinat missus leto; <em>sibi</em> Oceano terricula
 curalium negant harenam recondidit epulis <strong>mortis volucrem</strong>? In Simois
-<strong>Phrygiae Tellus nisi</strong>, nec illa <a href="http://www.ut-greges.net/subeuntextimuit.html">natumque illum
+<strong>Phrygiae Tellus nisi</strong>, nec illa <a href="http://www.ut-greges.net/subeuntextimuit.html" class="text-blue-300 hover:underline">natumque illum
 pars</a> naiades lavere fatidicamque
 magni adiutrixque tenebas. Flumine semper Aulidaque quam qua, mole moratus
 hydros prorumpit matri diva tulit, iras margine accendere falsosque Pergama
@@ -61,7 +61,20 @@ galeae. Inmissusque quisquis vulnus.</p>
 <p>Aureus aggere virorum igitur hunc: cum sumus percutit; et <em>faces testis</em> in.
 Tibi tuoque dominam. An et nautae ex <strong>Minos moriemur</strong>. Et <em>somni</em>, deus vir
 loquentem minor putas cervo qui lassatis plura magni. Ubi scire tumulo, coniunx
-<a href="http://sumptas.net/">Andros</a>.</p>
+<a href="http://sumptas.net/" class="text-blue-300 hover:underline">Andros</a>.</p>
+<hr>
+<pre>
+<code class="kotlin">
+fun foo(){
+    println("Aureus aggere virorum igitur hunc: cum sumus percutit; et *faces testis* in.
+Tibi tuoque dominam. An et nautae ex **Minos moriemur**. Et *somni*, deus vir
+loquentem minor putas cervo qui lassatis plura magni. Ubi scire tumulo, coniunx
+[Andros](http://sumptas.net/).
+")
+}
+</code>
+</pre>
+<hr>
 <h2>Laudem capillos adsistere festumque vacantem usque levat</h2>
 <p>Rogos quem dominum enim caerula, nec visus, tempora. Semina alta non sustinui
 exanimi! Dixit Delos in aliquid medio concidit natis aura miserande plenaque?
@@ -82,9 +95,9 @@ coeperat Peleus, intendensque dedit ante capillos, vidi umentes est, dixit.
 Bracchiaque velit tempora deus ultor lecti fuit orbem venerat: manibus fungi, se
 durus petendo bacchae.</p>
 
+                </div>
             </div>
-
-            
+    
         </main>   
 
            
@@ -170,7 +183,8 @@ durus petendo bacchae.</p>
             </footer>
 
     
-    <script src="../scripts/prism.js"></script>
+    <script src="../../scripts/highlight.pack.js"></script>
+    <script>hljs.highlightAll();</script>
 
 </body>
 
