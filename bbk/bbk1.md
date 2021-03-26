@@ -4,7 +4,7 @@ layout: bbk/detail/index.njk
 title: bbk1 | chetangupta
 date: 2020-11-16
 headline : BBK#1 Find Middle Element
-subline : can you make it clean?
+subline : Lorem markdownum corpore inque rapidi. Sine **haut** quos, coeperunt duce
 banner : ../../images/main-banner.jpg
 permalink: /bbk/bbk1.html
 avatar: ../../images/avatar.png

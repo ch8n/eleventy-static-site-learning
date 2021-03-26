@@ -59,13 +59,13 @@ pagination:
 </div>
 
 <!-- article list -->
-<div class="lg:container lg:mx-auto lg:p-4 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+<div class="lg:container mt-2 lg:mx-auto sm:p-2 lg:p-4 grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
 
     <!-- article card -->
     {%- for bbk in bigbrainkotlin -%}
 
     <!-- one card container -->
-    <div class="transform hover:-translate-y-6 hover:shadow-xl rounded-xl shadow-md border-2 overflow-hidden m-4">
+    <div class="transform hover:-translate-y-6 hover:shadow-xl rounded-xl shadow-md border overflow-hidden m-3">
 
         <div onclick="window.open('{{bbk.data.permalink}}')">
             <div class="bg-yellow-500 h-52 overflow-hidden">
@@ -82,6 +82,8 @@ pagination:
     {%- endfor -%}
 </div>
 
+<!-- paging -->
+<hr class="mx-16 my-2">
 <div class="container mx-auto p-4">
     <nav>
         <p class="text-2xl font-semibold text-center">Pages</p>

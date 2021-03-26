@@ -10,35 +10,41 @@
     <title>{{title}}</title>
 </head>
 
-<body class="h-screen bg-gray-800 font-sans">
+<body class="h-screen bg-gray-900 text-gray-200 font-sans">
 
-    <div class="h-full">
+    
 
         <!-- header -->
         <header>
-
             <!-- Hero Image -->
             <div class="bg-cover bg-center h-96 bg-red-400 overflow-hidden bg-red-400">
                 <img class="object-cover w-full h-full" src="{{banner}}" alt="">
             </div>
-
         </header>
 
         <!-- main -->
-        <main class="h-full p-8">
+        <main class="container p-8 ">
 
             <!-- article container -->
-            <div>
+            <div >
                 <p class="text-4xl bold text-center mb-2 capitalize">{{headline}}</p>
-                <p class="text-2xl text-center mb-16 ">{{subline}}</p>
-
-                <div>
-                    {{ content | safe }}
-                </div>
+                <p class="text-lg text-center mb-4 "><!-- avatar -->
+                    <img class="inline-block w-10 h-10 rounded-full object-cover border-2 mr-2 md-2" src="{{avatar}}" alt=""> 
+                    {{subline}}
+                </p>
+                <hr class="mb-8">
             </div>
 
-             <!-- recommended section -->
-            <div>
+            <div class="flex flex-col">
+                {{ content | safe }}
+            </div>
+
+            
+        </main>   
+
+           
+        <!-- recommended section -->
+            <div class="text-white">
 
                 <p class="text-xl text-center capitalize">Recommended Reads</p>
 
@@ -110,7 +116,7 @@
 
 
             <!-- footer -->
-            <footer class="bg-gray-900 text-gray-200 p-6">
+            <footer class="bg-gray-600 p-6">
                 <div class="flex flex-col justify-center items-center">
                     <p class="capitalize">© 2021 Chetan Gupta</p>
                     <p>Social</p>
@@ -118,11 +124,7 @@
 
             </footer>
 
-        </main>   
-
-           
-
-    </div>
+    
     <script src="../scripts/prism.js"></script>
 
 </body>
